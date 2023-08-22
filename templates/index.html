@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch API Demo</title>
+    <title>Flask Spam</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'image/plant-flask.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
 </head>
 <body>
     <div class="container">
         <form method="post" action="/">
-            <label for="yourphone">Your phone</label>
-            <input type="tel" id="phone" name="yourphone" placeholder="Your phone..">
+            <label for="phone">Your phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone..">
             <input type="submit" value="Send">
     </div>
     <script src="{{ url_for('static', filename = 'js/app.js') }}"></script>
